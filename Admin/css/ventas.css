@@ -1,0 +1,7 @@
+.logonav{
+    max-width: 6em !important;
+}
+.div-logo{
+    display: flex !important;
+    justify-content: center !important;
+}

@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">
     <!-- Custom CSS -->
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/botoven.css">
+    <link rel="stylesheet" href="css/ventas.css">
+
 </head>
 
 <body>
@@ -46,19 +49,11 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <a class="navbar-brand" href="dashboard.html">
-                        <!-- Logo icon -->
-                        <b class="logo-icon">
-                            <!-- Dark Logo icon -->
-                            <img src="plugins/images/logo-icon.png" alt="homepage" />
-                        </b>
-                        <!--End Logo icon -->
-                        <!-- Logo text -->
-                        <span class="logo-text">
-                            <!-- dark Logo text -->
-                            <img src="plugins/images/logo-text.png" alt="homepage" />
-                        </span>
-                    </a>
+                    <div class="div-logo">
+                        <a class="" href="dashboard.html">
+                            <img src="IMG/Logo1.png" class="logonav" alt="homepage">
+                        </a>
+                    </div>
                     <!-- ============================================================== -->
                     <!-- End Logo -->
                     <!-- ============================================================== -->
@@ -72,7 +67,7 @@
                 <!-- End Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-                   
+
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
                     <!-- ============================================================== -->
@@ -121,7 +116,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.html"
                                 aria-expanded="false">
                                 <i class="far fa-clock" aria-hidden="true"></i>
-                                <span class="hide-menu">Dashboard</span>
+                                <span class="hide-menu">Ventas</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -156,7 +151,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html"
                                 aria-expanded="false">
                                 <i class="fa fa-columns" aria-hidden="true"></i>
-                                <span class="hide-menu">Blank Page</span>
+                                <span class="hide-menu">Productos</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -166,11 +161,7 @@
                                 <span class="hide-menu">Error 404</span>
                             </a>
                         </li>
-                        <li class="text-center p-20 upgrade-btn">
-                            <a href="https://www.wrappixel.com/templates/ampleadmin/"
-                                class="btn d-grid btn-danger text-white" target="_blank">
-                                Upgrade to Pro</a>
-                        </li>
+
                     </ul>
 
                 </nav>
@@ -183,7 +174,9 @@
         <!-- ============================================================== -->
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
-        <!-- ============================================================== -->
+        <!-- ============================================================= -->
+
+
         <div class="page-wrapper">
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
@@ -192,20 +185,18 @@
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                         <h4 class="page-title">Ventas</h4>
+
                     </div>
-                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                        <div class="d-md-flex">
-                            <ol class="breadcrumb ms-auto">
-                                <li><a href="grafica.html"
-                                        class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Grafica</a></li>
-                            </ol>
-                            <ol class="breadcrumb ms-auto">
+                    <div class="d-md-flex">
 
-                                <a href="top10.html"
-                                    class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Top:10</a>
-                            </ol>
+                        <ol class=" ms-auto">
+                            <button class="glow-on-hover d-none d-md-block" type="button"><a href="grafica.html">Grafica</a></button>
+                        </ol>
 
-                        </div>
+                        <ol class=" ms-auto">
+                            <button class="glow-on-hover" type="button"><a href="top10.html">Top:10</a></button>
+                        </ol>
+
                     </div>
                 </div>
                 <!-- /.col-lg-12 -->
@@ -216,110 +207,97 @@
             <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
-            
-                <!-- ============================================================== -->
-                <!-- PRODUCTS YEARLY SALES -->
-                <!-- ============================================================== -->
-                
-                <!-- ============================================================== -->
-                <!-- RECENT SALES -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12">
-                        <div class="white-box">
-                            <div class="d-md-flex mb-3">
-                                <!-- <h3 class="box-title mb-0">Recent sales</h3> ffffffffffffffffffffffffffff-->
-                                <div class="col-md-3 col-sm-4 col-xs-6 ms-auto">
-                                    <select class="form-select shadow-none row border-top">
-                                        <option>March 2021</option>
-                                        <option>April 2021</option>
-                                        <option>May 2021</option>
-                                        <option>June 2021</option>
-                                        <option>July 2021</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table no-wrap">
-                                    <thead>
-                                        <tr>
-                                            <th class="border-top-0">#</th>
-                                            <th class="border-top-0">Name</th>
-                                            <th class="border-top-0">Status</th>
-                                            <th class="border-top-0">Date</th>
-                                            <th class="border-top-0">Price</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td class="txt-oflo">Elite admin</td>
-                                            <td>SALE</td>
-                                            <td class="txt-oflo">April 18, 2021</td>
-                                            <td><span class="text-success">$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td class="txt-oflo">Real Homes WP Theme</td>
-                                            <td>EXTENDED</td>
-                                            <td class="txt-oflo">April 19, 2021</td>
-                                            <td><span class="text-info">$1250</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td class="txt-oflo">Ample Admin</td>
-                                            <td>EXTENDED</td>
-                                            <td class="txt-oflo">April 19, 2021</td>
-                                            <td><span class="text-info">$1250</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td class="txt-oflo">Medical Pro WP Theme</td>
-                                            <td>TAX</td>
-                                            <td class="txt-oflo">April 20, 2021</td>
-                                            <td><span class="text-danger">-$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td class="txt-oflo">Hosting press html</td>
-                                            <td>SALE</td>
-                                            <td class="txt-oflo">April 21, 2021</td>
-                                            <td><span class="text-success">$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td class="txt-oflo">Digital Agency PSD</td>
-                                            <td>SALE</td>
-                                            <td class="txt-oflo">April 23, 2021</td>
-                                            <td><span class="text-danger">-$14</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td class="txt-oflo">Helping Hands WP Theme</td>
-                                            <td>MEMBER</td>
-                                            <td class="txt-oflo">April 22, 2021</td>
-                                            <td><span class="text-success">$64</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+
+            <!-- ============================================================== -->
+            <!-- PRODUCTS YEARLY SALES -->
+            <!-- ============================================================== -->
+
+            <!-- ============================================================== -->
+            <!-- RECENT SALES -->
+            <!-- ============================================================== -->
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <div class="white-box">
+                        <div class="d-md-flex mb-3">
+                            <!-- <h3 class="box-title mb-0">Recent sales</h3> ffffffffffffffffffffffffffff-->
+                            <div class="col-md-3 col-sm-4 col-xs-6 ms-auto">
+                                <select class="form-select shadow-none row border-top">
+                                    <option>March 2021</option>
+                                    <option>April 2021</option>
+                                    <option>May 2021</option>
+                                    <option>June 2021</option>
+                                    <option>July 2021</option>
+                                </select>
                             </div>
                         </div>
-                    </div>
-                </div>
-                                <!-- ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg -->
-                            </div>
+                        <div class="table-responsive">
+                            <table class="table no-wrap">
+                                <thead>
+                                    <tr>
+                                        <th class="border-top-0">#</th>
+                                        <th class="border-top-0">Nombre</th>
+                                        <th class="border-top-0">Producto</th>
+                                        <th class="border-top-0">Cantidad</th>
+                                        <th class="border-top-0">Prcio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="txt-oflo">Johan</td>
+                                        <td>jugo de mango</td>
+                                        <td class="txt-oflo">10</td>
+                                        <td><span class="text-success">$24</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="txt-oflo">Johan</td>
+                                        <td>jugo de mango</td>
+                                        <td class="txt-oflo">10</td>
+                                        <td><span class="text-info">$1250</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="txt-oflo">Johan html</td>
+                                        <td>jugo de mango</td>
+                                        <td class="txt-oflo">10</td>
+                                        <td><span class="text-success">$24</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td class="txt-oflo">Johan</td>
+                                        <td>jugo de mango</td>
+                                        <td class="txt-oflo">10</td>
+                                        <td><span class="text-danger">-$14</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td class="txt-oflo">Johan</td>
+                                        <td>jugo de mango</td>
+                                        <td class="txt-oflo">10</td>
+                                        <td><span class="text-success">$64</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    
-                    <!-- /.col -->
                 </div>
             </div>
-           
+            <!-- ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg -->
         </div>
-       
     </div>
-    
-    
+    </div>
+
+    <!-- /.col -->
+    </div>
+    </div>
+
+    </div>
+
+    </div>
+
     <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>

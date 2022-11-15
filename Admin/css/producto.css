@@ -1,0 +1,12 @@
+/* .py-5{
+
+    display: flex !important;
+align-items: center !important;
+    
+} */
+
+.cdenter{
+    position: relative;
+    left: 8em;
+    bottom: 10em;
+}
