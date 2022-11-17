@@ -9,12 +9,15 @@
     
   </head>
   <body>
-    <div class="contenedor">
 
-    <?php
+  <?php
 
 include('campo/Nav.php')
 ?>
+
+    <div class="contenedor">
+  
+
       <div class="login">
         <article class="fondo">
           <img src="../IMG/Logo.jpeg" alt="User">
@@ -24,7 +27,7 @@ include('campo/Nav.php')
             <br>
             <span class="icon-key"></span><input class="inp" type="password" name="contrasena" id="contrasena" placeholder="Digite su contraseña" >
             <br>
-            <a href="" class="he">He olvidado mi contraseña</a>
+            <a href="restablecer.php" class="he">He olvidado mi contraseña // </a>
             <a href="registro.php" class="he">Ya estoy registrado</a>
             <button type="submit" name="acceder"  class="boton">Iniciar Sesión</button>
           </form>
@@ -32,7 +35,6 @@ include('campo/Nav.php')
       </div>
 
     </div>
-
     <?=require_once'campo/footer.php';?>
   </body>
 </html>

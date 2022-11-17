@@ -22,18 +22,16 @@
 
 
 </head>
+<?php
+
+require('campo/Nav.php')
+?>
+
+
+
+
+
 <body id="page-top">
-<?php
-
-include('campo/Nav.php')
-?>
-
-<?php
-
-include('carrusel.php')
-
-
-?>
   <section class="content-section" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">

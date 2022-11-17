@@ -20,6 +20,7 @@ include('campo/Nav.php')
     <input class="controls" type="text" name="nombreusuario" id="nombreusuario" placeholder="Ingrese su Nombre" minlength="6" maxlength="20" required>
     <input class="controls" type="email" name="correoelectronico" id="correoelectronico" placeholder="Ingrese su Correo" required>
     <input class="controls" type="password" name="contrasenausuario" id="contrasenausuario" placeholder="Ingrese su Contraseña" minlength="2" maxlength="10" required>
+    <input class="controls" type="password" name="contrasenausuario" id="contrasenausuario" placeholder="Ingrese su Contraseña" minlength="2" maxlength="10" required>
     <input type="hidden" name="estado" value=1 />
     <input type="hidden" name="idrol" value=2 />
     <input class="controls" type="text" name="direccion" id="direccion" placeholder="Ingrese su Dirección" required>
@@ -36,7 +37,7 @@ include('campo/Nav.php')
   </section>
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
+<br>
 
 <?=require_once'campo/footer.php';?>
 </body>

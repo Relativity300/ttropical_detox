@@ -13,7 +13,7 @@
 </head>
 <body>
   <header class="ca">
-    <nav class="navbar navv navbar-dark bg fixed-top">
+    <nav class="navbar navv navbar-dark bg " >
         <div class="container">
           
           <a class="a navbar-brand" href="personalizado.php"><p class="p">Personalizados</p></a>
