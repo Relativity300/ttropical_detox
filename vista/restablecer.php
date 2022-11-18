@@ -33,7 +33,7 @@ include('campo/Nav.php')
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 
-<?=require_once'campo/footer.php';?>
+<?php require_once'campo/footer.php';?>
 
 <script>
 function myFunction() {

@@ -22,19 +22,119 @@ include('campo/Nav.php')
         <article class="fondo">
           <img src="../IMG/Logo.jpeg" alt="User">
           <h3>Inicio de Sesión</h3>
-          <form name="frmAcceso" action="" method="POST">
-            <span class="icon-user"></span><input class="inp" type="text" name="usuario" id="usuario" placeholder="Digite su Correo" >
+          <form name="frmAcceso" action="" method="POST" id="formulario" name="formulario">
+            <span class="icon-user"></span><input class="inp" type="email" name="usuario" id="correo" placeholder="Digite su Correo" >
             <br>
-            <span class="icon-key"></span><input class="inp" type="password" name="contrasena" id="contrasena" placeholder="Digite su contraseña" >
+            
+            <div class="input-group-append ">
+            <span class="icon-key"></span><input class="inp" type="password" name="contrasena" id="clave" placeholder="Digite su contraseña">
+            <div class="d-flex flex-row-reverse" >
+            <button id="show_password" class="btn" type="button" onclick="mostrarPassword()"> <box-icon type='solid' name='show'></box-icon> </button>
+            </div>
+          </div>
             <br>
             <a href="restablecer.php" class="he">He olvidado mi contraseña // </a>
-            <a href="registro.php" class="he">Ya estoy registrado</a>
-            <button type="submit" name="acceder"  class="boton">Iniciar Sesión</button>
+            <a href="registro.php" class="he"><i class="fa fa-sticky-note" aria-hidden="true"></i> estoy registrado</a>
+            <button type="submit" name="submit" id="submit"  class="boton">Iniciar Sesión</button>
           </form>
         </article>
       </div>
 
     </div>
-    <?=require_once'campo/footer.php';?>
+    <?php require_once'campo/footer.php';?>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+  });
+
+
+  function mostrarPassword(){
+		var cambio = document.getElementById("clave");
+		if(cambio.type == "password"){
+			cambio.type = "text";
+			$('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+		}else{
+			cambio.type = "password";
+			$('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+		}
+	} 
+	
+	$(document).ready(function () {
+	//CheckBox mostrar contraseña
+	$('#ShowPassword').click(function () {
+		$('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
+	});
+});
+
+  function validarFormulario(evento) {
+    evento.preventDefault();
+    var correo = document.getElementById('correo').value;
+    var clave = document.getElementById('clave').value;
+
+
+    //LOS DOS ESTAN VACIOS
+    if(!correo && !clave){
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Tienes que ingresar los campos'
+      })
+      return;
+    }
+    //CORREO VACIO
+    if (!correo) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Tienes que ingresar el correo'
+      })
+      return;
+    }
+
+    //NO TERMINA EN @GMAIL.COM
+    //EXPRECION REGULAR
+    var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    var valido = expReg.test(correo);
+    if(!valido){
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'el correo tiene que terminar en "@gmail.com"'
+      })
+      return;
+    }
+    
+
+    //CLAVE TIENE MENOS DE 5 CARACTERES
+    if (!clave) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'La contraseña es un campo obligatorio'
+      })
+
+      return;
+    }
+    //CLAVE NO INGRESADA
+    if (clave.length < 5) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'La contraseña tiene que tener mas de 5 caracteres'
+        })
+      return;
+    }
+    
+        return window.location.href = 'index';
+
+    
+    this.submit();
+  }
+    </script>
   </body>
 </html>

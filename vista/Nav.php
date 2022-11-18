@@ -42,7 +42,7 @@
         </div>
       </nav>
       </header>
-      
+      <?php require_once'campo/footer.php';?>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

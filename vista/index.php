@@ -366,7 +366,7 @@ include('campo/Nav.php')
       
     <!-- end footer-main -->
     <br>
-    <?=require_once'campo/footer.php';?>
+    <?php require_once'campo/footer.php';?>
  
 
     <!-- ALL JS FILES -->

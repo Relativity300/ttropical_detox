@@ -34,7 +34,7 @@ body {
   border: 1px solid #14d0d6;
   font-family: 'calibri';
   font-size: 18px;
-  color: white;
+  color: rgb(8, 0, 0);
 }
 
 .form-register p {

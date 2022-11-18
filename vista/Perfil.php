@@ -5,23 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    
+    <!-- letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,300&family=Libre+Baskerville:ital@1&family=Oswald&family=Poppins:ital,wght@0,400;0,600;1,500&family=Roboto+Condensed:ital,wght@1,300;1,400&family=Roboto+Slab&family=Rubik&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="sb-nav-fixed">
 
-<?=require_once'campo/Nav.php';?>    
+<?php require_once'campo/Nav.php';?>    
 
-    <br>
-
-    <br>
-    <br>
-    <br>
-    <br>
+  
     <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-md-8 offset-md-2">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -51,6 +49,18 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
+                                    <label for="codigo" class="col-2"> apellido:</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" value="Ceballos">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="codigo" class="col-2"> identificacion:</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" value="1000569253">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
                                     <label for="usuarop" class="col-2"> Correo:</label>
                                     <div class="col-8">
                                         <input type="text" class="form-control" value="Jpceballos35@misena.edu.co">
@@ -68,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="tab-pane fade mb-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="col-md-6 offset-md-3">
                             <h3 class="text-center">Cambio Contraseña</h3>
                             <div class="form-group row">
@@ -98,14 +108,15 @@
             </div>
 
         </div>
-
+        
     </div>
 
-
-
+    <?php require_once'campo/footer.php';?>
+    
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<?=require_once'campo/footer.php';?>
+
+
 
 </body>
 
