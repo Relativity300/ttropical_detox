@@ -16,14 +16,14 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
     <!-- Custom CSS -->
-   <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-<link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/nav.css">
 
 </head>
 
@@ -53,7 +53,7 @@
                     <!-- ============================================================== -->
                     <div class="div-logo">
                         <a class="" href="dashboard.html">
-                                <img src="IMG/Logo1.png" class="logonav" alt="homepage">
+                            <img src="IMG/Logo1.png" class="logonav" alt="homepage">
                         </a>
                     </div>
                     <!-- ============================================================== -->
@@ -147,18 +147,19 @@
                                 <span class="hide-menu">Clientes</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href=""
-                                aria-expanded="false">
-                                <i class="fa fa-globe" aria-hidden="true"></i>
-                                <span class="hide-menu">Pedidos</span>
-                            </a>
-                        </li>
+                       
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.html"
                                 aria-expanded="false">
                                 <i class="fa fa-columns" aria-hidden="true"></i>
                                 <span class="hide-menu">Ventas</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="pedido.html"
+                                aria-expanded="false">
+                                <i class="fa fa-columns" aria-hidden="true"></i>
+                                <span class="hide-menu">pedido</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -177,7 +178,7 @@
                         </li>
 
                     </ul>
-
+                    
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -217,7 +218,7 @@
                                             <th class="border-top-0">Dirección</th>
                                             <th class="border-top-0">Rol</th>
                                             <th class="border-top-0">Inactivo / Activo</th>
-                                            <th class="border-top-0">Editar</th>                
+                                            <th class="border-top-0">Editar</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -230,11 +231,14 @@
                                             <td>jpceballos@35@misena.edu.co</td>
                                             <td>Calle 65 #58 08</td>
                                             <td>Administrador</td>
-                                            <td><div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                              </div>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked" checked>
+                                                </div>
                                             </td>
-                                            <td><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaModal2" type="button">Editar</button></td>      
+                                            <td><button class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#ventanaModal2" type="button">Editar</button></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -245,140 +249,162 @@
                                             <td>Jose@gmail.com</td>
                                             <td>Cra. 50 #65-34</td>
                                             <td>Cliente</td>
-                                            <td><div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                              </div>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked" checked>
+                                                </div>
                                             </td>
-                                            <td><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaModal2" type="button">Editar</button></td> 
+                                            <td><button class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#ventanaModal2" type="button">Editar</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaModal">Agregar Usuario</button>
-                                    <div class="modal fade" id="ventanaModal" tabeindex="-1">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h2>Agregar Usuario</h2>
-                                                    <button class="close" data-bs-dismiss="modal"><span>&times;</span></button>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#ventanaModal">Agregar Usuario</button>
+                                <div class="modal fade" id="ventanaModal" tabeindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2>Agregar Usuario</h2>
+                                                <button class="close"
+                                                    data-bs-dismiss="modal"><span>&times;</span></button>
 
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form>
-                                                        <div class="mb-3">
-                                                          <label for="documento" class="form-label">Documento</label>
-                                                          <input type="number" class="form-control" id="documento" autofocus>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="documento" class="form-label">Documento</label>
+                                                        <input type="number" class="form-control" id="documento"
+                                                            autofocus>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="Nombre" class="form-label">Nombre</label>
+                                                        <input type="text" class="form-control" id="Nombre">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="Apellidos" class="form-label">Apellidos</label>
+                                                        <input type="text" class="form-control" id="Apellidos">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="telefono" class="form-label">Teléfono</label>
+                                                        <input type="number" class="form-control" id="telefono">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="correo" class="form-label">Correo
+                                                            Electrónico</label>
+                                                        <input type="email" class="form-control" id="correo">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="direccion" class="form-label">Dirección</label>
+                                                        <input type="text" class="form-control" id="direccion">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label>Rol</label>
+                                                        <select class="form-select form-select-sm"
+                                                            aria-label=".form-select-sm example">
+                                                            <option selected>Administrador</option>
+                                                            <option value="1">Cliente</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label>Estado</label>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="flexSwitchCheckCheckedDisabled" checked disabled>
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckCheckedDisabled">Activo</label>
                                                         </div>
-                                                        <div class="mb-3">
-                                                            <label for="Nombre" class="form-label">Nombre</label>
-                                                            <input type="text" class="form-control" id="Nombre">
-                                                          </div>
-                                                          <div class="mb-3">
-                                                            <label for="Apellidos" class="form-label">Apellidos</label>
-                                                            <input type="text" class="form-control" id="Apellidos">
-                                                          </div>
-                                                          <div class="mb-3">
-                                                            <label for="telefono" class="form-label">Teléfono</label>
-                                                            <input type="number" class="form-control" id="telefono">
-                                                          </div>
-                                                          <div class="mb-3">
-                                                            <label for="correo" class="form-label">Correo Electrónico</label>
-                                                            <input type="email" class="form-control" id="correo">
-                                                          </div>
-                                                          <div class="mb-3">
-                                                            <label for="direccion" class="form-label">Dirección</label>
-                                                            <input type="text" class="form-control" id="direccion">
-                                                          </div>                    
-                                                          <div class="mb-3">
-                                                            <label>Rol</label>
-                                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                                                <option selected>Administrador</option>
-                                                                <option value="1">Cliente</option>
-                                                              </select>
-                                                          </div>
-                                                          <div class="mb-3">
-                                                            <label>Estado</label>
-                                                            <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
-                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
-                                                            </div>
-                                                          </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                                    <button type="button" class="btn btn-success">Guardar</button>
-                                                </div>
-
+                                                    </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn btn-success">Guardar</button>
                                             </div>
 
                                         </div>
+
                                     </div>
+                                </div>
 
 
 
-                                    <div class="modal fade" id="ventanaModal2" tabeindex="-1">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h2>Editar Usuario</h2>
-                                                    <button class="close" data-bs-dismiss="modal"><span>&times;</span></button>
-    
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form>
-                                                        <div class="mb-3">
-                                                          <label for="documento" class="form-label">Documento</label>
-                                                          <input type="number" class="form-control" id="documento" autofocus>
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="Nombre" class="form-label">Nombre</label>
-                                                            <input type="text" class="form-control" id="Nombre">
-                                                          </div>
-                                                          <div class="mb-3">
-                                                            <label for="Apellidos" class="form-label">Apellidos</label>
-                                                            <input type="text" class="form-control" id="Apellidos">
-                                                          </div>
-                                                          <div class="mb-3">
-                                                            <label for="telefono" class="form-label">Teléfono</label>
-                                                            <input type="number" class="form-control" id="telefono">
-                                                          </div>
-                                                          <div class="mb-3">
-                                                            <label for="correo" class="form-label">Correo Electrónico</label>
-                                                            <input type="email" class="form-control" id="correo">
-                                                          </div>
-                                                          <div class="mb-3">
-                                                            <label for="direccion" class="form-label">Dirección</label>
-                                                            <input type="text" class="form-control" id="direccion">
-                                                          </div>                    
-                                                          <div class="mb-3">
-                                                            <label>Rol</label>
-                                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                                                <option selected>Cliente</option>
-                                                                <option >Administrador</option>
-                                                              </select>
-                                                          </div>
-                                                          <div class="mb-3">
-                                                            <label>Estado</label>
-                                                            <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
-                                                            </div>
-                                                          </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                                    <button type="button" class="btn btn-success">Guardar</button>
-                                                </div>
-    
+                                <div class="modal fade" id="ventanaModal2" tabeindex="-1">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h2>Editar Usuario</h2>
+                                                <button class="close"
+                                                    data-bs-dismiss="modal"><span>&times;</span></button>
+
                                             </div>
-    
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="documento" class="form-label">Documento</label>
+                                                        <input type="number" class="form-control" id="documento"
+                                                            autofocus>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="Nombre" class="form-label">Nombre</label>
+                                                        <input type="text" class="form-control" id="Nombre">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="Apellidos" class="form-label">Apellidos</label>
+                                                        <input type="text" class="form-control" id="Apellidos">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="telefono" class="form-label">Teléfono</label>
+                                                        <input type="number" class="form-control" id="telefono">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="correo" class="form-label">Correo
+                                                            Electrónico</label>
+                                                        <input type="email" class="form-control" id="correo">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="direccion" class="form-label">Dirección</label>
+                                                        <input type="text" class="form-control" id="direccion">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label>Rol</label>
+                                                        <select class="form-select form-select-sm"
+                                                            aria-label=".form-select-sm example">
+                                                            <option selected>Cliente</option>
+                                                            <option>Administrador</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label>Estado</label>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="flexSwitchCheckChecked" checked>
+                                                            <label class="form-check-label"
+                                                                for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-bs-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn btn-success">Guardar</button>
+                                            </div>
+
                                         </div>
+
                                     </div>
+                                </div>
 
 
 
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
@@ -395,6 +421,7 @@
     <script src="js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.js"></script>
+
 </body>
 
 </html>
