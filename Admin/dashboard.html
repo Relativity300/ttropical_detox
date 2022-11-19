@@ -16,13 +16,14 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
     <!-- Custom CSS -->
-    <link href="plugins/bower_components/chartist/dist/chartist.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css">
-    <!-- Custom CSS -->
     <link href="css/style.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/botoven.css">
-    <link rel="stylesheet" href="css/ventas.css">
-
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/ventas.css">
 </head>
 
 <body>
@@ -49,11 +50,19 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <div class="div-logo">
-                        <a class="" href="dashboard.html">
-                            <img src="IMG/Logo1.png" class="logonav" alt="homepage">
-                        </a>
-                    </div>
+                    <a class="navbar-brand" href="dashboard.html">
+                        <!-- Logo icon -->
+                        <b class="logo-icon">
+                            <!-- Dark Logo icon -->
+                            <img src="plugins/images/logo-icon.png" alt="homepage" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span class="logo-text">
+                            <!-- dark Logo text -->
+                            <img src="plugins/images/logo-text.png" alt="homepage" />
+                        </span>
+                    </a>
                     <!-- ============================================================== -->
                     <!-- End Logo -->
                     <!-- ============================================================== -->
@@ -67,7 +76,12 @@
                 <!-- End Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-
+                    <ul class="navbar-nav d-none d-md-block d-lg-none">
+                        <li class="nav-item">
+                            <a class="nav-toggler nav-link waves-effect waves-light text-white"
+                                href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                        </li>
+                    </ul>
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
                     <!-- ============================================================== -->
@@ -113,62 +127,59 @@
                     <ul id="sidebarnav">
                         <!-- User Profile-->
                         <li class="sidebar-item pt-2">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href=""
-                                aria-expanded="false">
-                                <i class="far fa-clock" aria-hidden="true"></i>
-                                <span class="hide-menu">Configuracion</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="usuarios.html"
-                                aria-expanded="false">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <span class="hide-menu">Usuarios</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="categoria de productos.html"
-                                aria-expanded="false">
-                                <i class="fa fa-table" aria-hidden="true"></i>
-                                <span class="hide-menu">Categoria de productos</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Clientes.html"
-                                aria-expanded="false">
-                                <i class="fa fa-font" aria-hidden="true"></i>
-                                <span class="hide-menu">Clientes</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href=""
-                                aria-expanded="false">
-                                <i class="fa fa-globe" aria-hidden="true"></i>
-                                <span class="hide-menu">Pedidos</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.html"
                                 aria-expanded="false">
-                                <i class="fa fa-columns" aria-hidden="true"></i>
-                                <span class="hide-menu">Ventas</span>
+                                <i class="far fa-clock" aria-hidden="true"></i>
+                                <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="modificar cuenta.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="profile.html"
                                 aria-expanded="false">
-                                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                <span class="hide-menu">Modificar Cuenta</span>
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span class="hide-menu">Profile</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="basic-table.html"
+                                aria-expanded="false">
+                                <i class="fa fa-table" aria-hidden="true"></i>
+                                <span class="hide-menu">Basic Table</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="fontawesome.html"
+                                aria-expanded="false">
+                                <i class="fa fa-font" aria-hidden="true"></i>
+                                <span class="hide-menu">Icon</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="map-google.html"
+                                aria-expanded="false">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span class="hide-menu">Google Map</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="blank.html"
+                                aria-expanded="false">
+                                <i class="fa fa-columns" aria-hidden="true"></i>
+                                <span class="hide-menu">Blank Page</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="404.html"
                                 aria-expanded="false">
                                 <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                <span class="hide-menu">Cerrar sesion</span>
+                                <span class="hide-menu">Error 404</span>
                             </a>
                         </li>
-
+                        <li class="text-center p-20 upgrade-btn">
+                            <a href="https://www.wrappixel.com/templates/ampleadmin/"
+                                class="btn d-grid btn-danger text-white" target="_blank">
+                                Upgrade to Pro</a>
+                        </li>
                     </ul>
 
                 </nav>
@@ -181,32 +192,30 @@
         <!-- ============================================================== -->
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
-        <!-- ============================================================= -->
-
-
+        <!-- ============================================================== -->
         <div class="page-wrapper">
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
             <div class="page-breadcrumb bg-white">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Ventas</h4>
 
-                    </div>
+                <div class="">
                     <div class="d-md-flex">
-
-                        <ol class=" ms-auto">
-                            <button class="glow-on-hover d-none d-md-block" type="button"><a href="grafica.html">Grafica</a></button>
+                        <ol class="breadcrumb ms-auto">
+                            <li><a href="grafica.html"
+                                    class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">grafica
+                                </a>
+                            </li>
                         </ol>
+                        <ol class="breadcrumb ms-auto">
 
-                        <ol class=" ms-auto">
-                            <button class="glow-on-hover" type="button"><a href="top10.html">Top:10</a></button>
+                            <a href="top10.html"
+                                class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Top:10</a>
                         </ol>
 
                     </div>
                 </div>
-                <!-- /.col-lg-12 -->
+
             </div>
             <!-- ============================================================== -->
             <!-- End Bread crumb and right sidebar toggle -->
@@ -214,113 +223,275 @@
             <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
+            <div class="container-fluid">
+                <div class="table-responsive">
+                    <table class="table no-wrap">
+                        <thead>
+                            <tr>
+                                <th class="border-top-0">ID</th>
+                                <th class="border-top-0">Nombre</th>
+                                <th class="border-top-0">Producto</th>
+                                <th class="border-top-0">Cantidad</th>
+                                <th class="border-top-0">Prcio</th>
+                                <th class="border-top-0">Ociones</th>
 
-            <!-- ============================================================== -->
-            <!-- PRODUCTS YEARLY SALES -->
-            <!-- ============================================================== -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="txt-oflo">Johan</td>
+                                <td>jugo de mango</td>
+                                <td class="txt-oflo">10</td>
+                                <td><span class="text-success">$24</span></td>
+                                <td class="txt-oflo">
+                                    <!-- eliminar -->
 
-            <!-- ============================================================== -->
-            <!-- RECENT SALES -->
-            <!-- ============================================================== -->
-            <div class="row">
-                <div class="col-md-12 col-lg-12 col-sm-12">
-                    <div class="white-box">
-                        <div class="d-md-flex mb-3">
-                            <!-- <h3 class="box-title mb-0">Recent sales</h3> ffffffffffffffffffffffffffff-->
-                            <div class="col-md-3 col-sm-4 col-xs-6 ms-auto">
-                                <select class="form-select shadow-none row border-top">
-                                    <option>March 2021</option>
-                                    <option>April 2021</option>
-                                    <option>May 2021</option>
-                                    <option>June 2021</option>
-                                    <option>July 2021</option>
-                                </select>
-                            </div>
+                                    <button type="button" class=" btn-primary" data-bs-toggle="modal" data-bs-target="#elliminar">
+                                        <i class="bi bi-trash"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                                                height="50" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                            </svg></i>
+                                    </button>
+
+                                    <!-- detalles -->
+                                    <button type="button" class=" btn-primary" data-bs-toggle="modal" data-bs-target="#Datos">
+                                        <i class="bi bi-file-earmark-spreadsheet"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-file-earmark-spreadsheet"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h3v2H6zm4 0v-2h3v1a1 1 0 0 1-1 1h-2zm3-3h-3v-2h3v2zm-7 0v-2h3v2H6z" />
+                                            </svg></i>
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td class="txt-oflo">Johan</td>
+                                <td>jugo de mango</td>
+                                <td class="txt-oflo">10</td>
+                                <td><span class="text-success">$24</span></td>
+                                <td class="txt-oflo">
+                                    <button type="button" class=" btn-primary" data-bs-toggle="modal" data-bs-target="#elliminar">
+                                        <i class="bi bi-trash"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                                                height="50" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                            </svg></i>
+                                    </button>
+
+                                    <!-- detalles -->
+                                    <button type="button" class=" btn-primary" data-bs-toggle="modal" data-bs-target="#Datos">
+                                        <i class="bi bi-file-earmark-spreadsheet"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-file-earmark-spreadsheet"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h3v2H6zm4 0v-2h3v1a1 1 0 0 1-1 1h-2zm3-3h-3v-2h3v2zm-7 0v-2h3v2H6z" />
+                                            </svg></i>
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td class="txt-oflo">Johan html</td>
+                                <td>jugo de mango</td>
+                                <td class="txt-oflo">10</td>
+                                <td><span class="text-success">$24</span></td>
+                                <td class="txt-oflo">
+                                    <!-- eliminar -->
+                                    <button type="button" class=" btn-primary" data-bs-toggle="modal" data-bs-target="#elliminar">
+                                        <i class="bi bi-trash"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                                                height="50" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                            </svg></i>
+                                    </button>
+
+                                    <!-- detalles -->
+                                    <button type="button" class=" btn-primary" data-bs-toggle="modal" data-bs-target="#Datos">
+                                        <i class="bi bi-file-earmark-spreadsheet"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-file-earmark-spreadsheet"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h3v2H6zm4 0v-2h3v1a1 1 0 0 1-1 1h-2zm3-3h-3v-2h3v2zm-7 0v-2h3v2H6z" />
+                                            </svg></i>
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td class="txt-oflo">Johan</td>
+                                <td>jugo de mango</td>
+                                <td class="txt-oflo">10</td>
+                                <td><span class="text-success">$24</span></td>
+                                <td class="txt-oflo">
+                                    <!-- eliminar -->
+                                    <button type="button" class=" btn-primary" data-bs-toggle="modal" data-bs-target="#elliminar">
+                                        <i class="bi bi-trash"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                                                height="50" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                            </svg></i>
+                                    </button>
+
+                                    <!-- detalles -->
+                                    <button type="button" class=" btn-primary" data-bs-toggle="modal" data-bs-target="#Datos">
+                                        <i class="bi bi-file-earmark-spreadsheet"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-file-earmark-spreadsheet"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h3v2H6zm4 0v-2h3v1a1 1 0 0 1-1 1h-2zm3-3h-3v-2h3v2zm-7 0v-2h3v2H6z" />
+                                            </svg></i>
+                                    </button>
+                                </td>
+
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td class="txt-oflo">Johan</td>
+                                <td>jugo de mango</td>
+                                <td class="txt-oflo">10</td>
+                                <td><span class="text-success">$24</span></td>
+                                <td class="txt-oflo">
+                                    <!-- eliminar -->
+                                    <button type="button" class=" btn-primary" data-bs-toggle="modal" data-bs-target="#elliminar">
+                                        <i class="bi bi-trash"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                                                height="50" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                            </svg></i>
+                                    </button>
+
+                                    <!-- detalles -->
+                                    <button type="button" class=" btn-primary" data-bs-toggle="modal" data-bs-target="#Datos">
+                                        <i class="bi bi-file-earmark-spreadsheet"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                                fill="currentColor" class="bi bi-file-earmark-spreadsheet"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h3v2H6zm4 0v-2h3v1a1 1 0 0 1-1 1h-2zm3-3h-3v-2h3v2zm-7 0v-2h3v2H6z" />
+                                            </svg></i>
+                                    </button>
+                                </td>
+
+                            </tr>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+            <!-- Modal1 -->
+            <div class="modal fade" id="elliminar" tabindex="-1" aria-labelledby="elliminar"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="titulo-Modal " >Eliminar pedido: 1.</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="table-responsive">
-                            <table class="table no-wrap">
-                                <thead>
-                                    <tr>
-                                        <th class="border-top-0">#</th>
-                                        <th class="border-top-0">Nombre</th>
-                                        <th class="border-top-0">Producto</th>
-                                        <th class="border-top-0">Cantidad</th>
-                                        <th class="border-top-0">Prcio</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td class="txt-oflo">Johan</td>
-                                        <td>jugo de mango</td>
-                                        <td class="txt-oflo">10</td>
-                                        <td><span class="text-success">$24</span></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>3</td>
-                                        <td class="txt-oflo">Johan</td>
-                                        <td>jugo de mango</td>
-                                        <td class="txt-oflo">10</td>
-                                        <td><span class="text-info">$1250</span></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>5</td>
-                                        <td class="txt-oflo">Johan html</td>
-                                        <td>jugo de mango</td>
-                                        <td class="txt-oflo">10</td>
-                                        <td><span class="text-success">$24</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td class="txt-oflo">Johan</td>
-                                        <td>jugo de mango</td>
-                                        <td class="txt-oflo">10</td>
-                                        <td><span class="text-danger">-$14</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td class="txt-oflo">Johan</td>
-                                        <td>jugo de mango</td>
-                                        <td class="txt-oflo">10</td>
-                                        <td><span class="text-success">$64</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="modal-body">
+                            <p class="p-descri"><b>Nombre: </b>Johan</p>
+                            <p class="p-descri"><b>productos:</b> <br>
+                                1: jugo mango. <br>
+                                2: jugo fresas. <br>
+                                3: jugo piña. <br>
+                            </p>
+                            <p class="p-descri"><b>Precio:</b> 5.000</p>
+                        </div>
+                        <div class="div-botones">
+                            <button type="button" class="bbb btn btn-primary eliminarr" data-bs-dismiss="modal">Eliminar.</button>
+                            <button type="button" class="bbb btn btn-primary" data-bs-dismiss="modal">cancelar.</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg -->
+
+            <!-- Modal2 -->
+            <div class="modal fade" id="Datos" tabindex="-1" aria-labelledby="Datos"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="titulo-Modal " >Detalles: 1.</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="p-descri"><b>Nombre: </b>Johan</p>
+                            <p class="p-descri"><b>productos:</b> <br>
+                                1: jugo mango. <br>
+                                2: jugo fresas. <br>
+                                3: jugo piña. <br>
+                            </p>
+                            <p class="p-descri"><b>Precio:</b> 5.000</p>
+                        </div>
+                        <div class="div-botones">
+                            <button type="button" class="bbb btn btn-primary" data-bs-dismiss="modal">Atras.</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center"> 2021 © Ample Admin brought to you by <a
+                    href="https://www.wrappixel.com/">wrappixel.com</a>
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
         </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
     </div>
-    </div>
-
-    <!-- /.col -->
-    </div>
-    </div>
-
-    </div>
-
-    </div>
-
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
     <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app-style-switcher.js"></script>
-    <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
     <!--Wave Effects -->
     <script src="js/waves.js"></script>
     <!--Menu sidebar -->
     <script src="js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.js"></script>
-    <!--This page JavaScript -->
-    <!--chartis chart-->
-    <script src="plugins/bower_components/chartist/dist/chartist.min.js"></script>
-    <script src="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-    <script src="js/pages/dashboards/dashboard1.js"></script>
 </body>
 
 </html>

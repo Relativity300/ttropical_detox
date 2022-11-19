@@ -41,7 +41,7 @@ include('campo/Nav.php')
       </div>
 
     </div>
-    <?php require_once'campo/footer.php';?>
+    
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script>
@@ -136,5 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
     this.submit();
   }
     </script>
+
+
   </body>
 </html>

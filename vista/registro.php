@@ -40,7 +40,6 @@ include('campo/Nav.php')
 
 <br>
 
-<?php require_once'campo/footer.php';?>
 
 <script>
 

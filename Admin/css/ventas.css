@@ -1,7 +1,27 @@
-.logonav{
-    max-width: 6em !important;
+
+
+
+
+.titulo-Modal{
+    text-align: center !important;
+    font-size: 3em;
 }
-.div-logo{
-    display: flex !important;
-    justify-content: center !important;
+.p-descri{
+
+    font-size: 2em;
+
+}
+.modal-header{
+    background-color: rgba(157, 241, 241, 0.74) !important;
+}
+.eliminarr{
+    background-color: rgb(126, 20, 20) !important;
+}
+.div-botones{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.bbb{
+    margin: 1em;
 }
