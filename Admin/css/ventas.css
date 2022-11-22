@@ -11,12 +11,7 @@
     font-size: 2em;
 
 }
-.modal-header{
-    background-color: rgba(157, 241, 241, 0.74) !important;
-}
-.eliminarr{
-    background-color: rgb(126, 20, 20) !important;
-}
+
 .div-botones{
     display: flex;
     justify-content: center;
@@ -24,4 +19,12 @@
 }
 .bbb{
     margin: 1em;
+}
+.titulo-ventas{
+    font-size: 2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+.button{
+    border: 0ch solid rgba(255, 255, 255, 0) !important;
 }

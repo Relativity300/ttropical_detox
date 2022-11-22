@@ -11,12 +11,6 @@
     font-size: 2em;
 
 }
-.modal-header{
-    background-color: rgba(157, 241, 241, 0.74) !important;
-}
-.eliminarr{
-    background-color: rgb(126, 20, 20) !important;
-}
 .div-botones{
     display: flex;
     justify-content: center;
@@ -36,16 +30,14 @@ label{
 }
 .gteneral{
     border-radius: .5em;
-    color: rgb(32, 97, 97);
-    text-shadow: 3px 3px 3px #bd59bd;
-    background-color: rgba(0, 255, 255, 0.185);
-    border: 1px solid ;
+    text-shadow: 3px 3px 3px #00000088;
+    background-color: rgba(245, 244, 160, 0.062);
+    border: 1px solid #000;
 }
 .seletor{
     border-radius: .5em;
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 3px 3px #aa43aa;
-    background-color: rgba(0, 255, 255, 0.185);
+    text-shadow: 3px 3px 3px #00000088;
+    background-color: rgba(245, 244, 160, 0.062);
     border: 1.5px solid #000 ;
     margin: 0%;
     padding: 0%;
@@ -75,14 +67,15 @@ bottom: 8em;
 .editar{
     width: 50%;
     height: 20em;
-    background-color: #c0cce275;
+    background-color: #a6cc9136;
     border: 2px solid #000;
     margin-right: .5em;
 }
 .editados{
     width: 50%;
     height: 20em;
-    background-color: #c0cce275;
+    background-color: #a6cc9136;
+
     border: 2px solid #000;
 
     margin-left: .5em;
@@ -125,7 +118,7 @@ input[type="search"]{
     width: 50px; /*ancho por defecto*/
     background: #ededed url('../IMG/luma.png') no-repeat 0px center; /*icono lupa*/
     background-size: 2em;
-    background-color: #EAC0EA;
+    background-color: #ebe96c9c;
     padding: 9px 10px 9px 32px;
     border-radius: 15em;
     -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
@@ -168,4 +161,8 @@ input[type="search"]:focus{
 .container-fluid{
     position: relative;
     bottom: 3em;
+}
+
+.button{
+    border: 0ch solid rgba(255, 255, 255, 0);
 }

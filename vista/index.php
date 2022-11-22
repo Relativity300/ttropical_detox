@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
 
     <!-- Site Metas -->
-    <title>Food Funday Restaurant - One page HTML Responsive</title>
+    <title>Tropical Detox </title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -28,7 +28,6 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="../css/responsive.css">
     <!-- color -->
-    <link id="changeable-colors" rel="stylesheet" href="../css/colors/orange.css" />
 
     <!-- Modernizer -->
     <script src="../js/modernizer.js"></script>
@@ -359,6 +358,8 @@ include('campo/Nav.php')
         </div>
         <!-- end container -->
     </div>
+
+    <?php require_once'campo/footer.php';?>
     <!-- end team-main -->
 
     <!-- end gallery-main -->

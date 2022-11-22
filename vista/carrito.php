@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="../css/Carrito.css">
   <link rel="stylesheet" href="../css/campo/fondoAzul.css">
 
-  <title>carrito</title>
+  <title>Tropical Detox </title>
 </head>
 
 <body>

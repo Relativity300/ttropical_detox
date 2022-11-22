@@ -70,7 +70,7 @@ border-top-right-radius: 5px;
 
       .line-chart-block, .bar-chart-block {
         height: 400px;
-        width: 82%;
+        width: 80%;
       }
        
 /******************************************
@@ -329,4 +329,8 @@ EL CSS DEL PEN ORIGINAL
 .fechas{
     display: flex;
     justify-content: center;
+}
+
+.titulo-grafica{
+  font-size: 2.5em;
 }

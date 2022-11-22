@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
 
 
-    <title>Document</title>
+    <title>Tropical Detox </title>
 </head>
 <body>
 <?php require_once'campo/Nav.php';?>

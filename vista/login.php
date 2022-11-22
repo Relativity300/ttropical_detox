@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Tropical Detox </title>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/loginf.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
@@ -41,6 +41,8 @@ include('campo/Nav.php')
       </div>
 
     </div>
+
+    <?php require_once'campo/footer.php';?>
     
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -76,6 +78,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var correo = document.getElementById('correo').value;
     var clave = document.getElementById('clave').value;
 
+    let NoEspeciales = /^[a-zA-ZÀ-ÿ\s]{1,40}$/ // Letras y espacios, pueden llevar acentos.
+    var expReg= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let cedulaNum = /^\d{0,10}$/ // 0 a 9 numeros.
+    let numerost = /^\d{0,11}$/
+    let contraseVali = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
 
     //LOS DOS ESTAN VACIOS
     if(!correo && !clave){
@@ -121,16 +128,19 @@ document.addEventListener("DOMContentLoaded", function() {
       return;
     }
     //CLAVE NO INGRESADA
-    if (clave.length < 5) {
+    let validarexprclave = contraseVali.test(clave)
+    if (!validarexprclave) {
         Swal.fire({
           icon: 'error',
           title: 'Oops...',
-          text: 'La contraseña tiene que tener mas de 5 caracteres'
+          text: 'La debe tener una mayuscula, y un caracter especial'
         })
       return;
+
+
     }
     
-        return window.location.href = 'index';
+    return window.location.href = 'index.php';
 
     
     this.submit();
