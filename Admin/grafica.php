@@ -192,20 +192,24 @@
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
+
+
             <div class="page-breadcrumb bg-white">
+
+            
 
                 <div class="">
                     <div class="d-md-flex">
                         <ol class="breadcrumb ms-auto">
                             <li><a href="grafica.php"
-                                    class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">grafica
+                                    class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Grafica
                                 </a>
                             </li>
                         </ol>
                         <ol class="breadcrumb ms-auto">
 
                             <a href="top10.php"
-                                class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Top:10</a>
+                                class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Top:5</a>
                         </ol>
 
                     </div>

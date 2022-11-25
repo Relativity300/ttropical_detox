@@ -1,25 +1,24 @@
 
-
-
-
-.titulo-Modal{
-    text-align: center !important;
-    font-size: 3em;
-}
 .p-descri{
 
-    font-size: 2em;
+    font-size: 1.5em;
 
+}
+.atras{
+    margin: 1em;
+    
+    color: black;
+}
+.dd{
+    background-color: #F5506F !important;
 }
 
 .div-botones{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     margin-bottom: 1em;
 }
-.bbb{
-    margin: 1em;
-}
+
 .titulo-ventas{
     font-size: 2em;
     margin-top: .5em;

@@ -2,21 +2,21 @@
 
 
 
-.titulo-Modal{
-    text-align: center !important;
-    font-size: 3em;
-}
+
 .p-descri{
 
     font-size: 2em;
 
 }
 .div-botones{
+    
     display: flex;
-    justify-content: center;
-    margin-bottom: 1em;
+    justify-content:right ;
 }
-
+.div-boto{
+    display: flex;
+    justify-content: right;
+}
 
 select{
     border-radius: .2em;
@@ -27,6 +27,7 @@ label{
 }
 .bbb{
     margin: 1em;
+    display: flex;
 }
 .gteneral{
     border-radius: .5em;
@@ -144,23 +145,24 @@ input[type="search"]:focus{
     left: 25em !important;
     z-index: 5 !important;
 }
-
-.Crearr{
+.mass{
     display: flex;
-    justify-content: right;
-    padding: 3em;
 }
-.bucar_list{
-    position: relative;
-    top: 5.5em;
+.Crearr{
+    margin-left: 70%;
+    position: absolute;
 }
+.formButton{
+    display: flex;
+}
+
 .page-wrapper{
     position: relative;
     bottom: 5em;
 }
 .container-fluid{
     position: relative;
-    bottom: 3em;
+    bottom: -4em;
 }
 
 .button{

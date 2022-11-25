@@ -300,8 +300,8 @@
                                                           </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
                                                     <button type="button" class="btn btn-success">Guardar</button>
+                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
                                                 </div>
 
                                             </div>
@@ -314,7 +314,7 @@
                                     <div class="modal fade" id="ventanaModal2" tabeindex="-1">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
-                                                <div class="modal-header">
+                                                <div>
                                                     <h2>Editar Cliente</h2>
                                                     <button class="close" data-bs-dismiss="modal"><span>&times;</span></button>
     

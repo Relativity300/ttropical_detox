@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords"
-        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Ample lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Ample admin lite dashboard bootstrap 5 dashboard template">
-    <meta name="description"
-        content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="keywords" content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Ample lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Ample admin lite dashboard bootstrap 5 dashboard template">
+    <meta name="description" content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
     <meta name="robots" content="noindex,nofollow">
     <title>Tropical Detox Administrador</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
@@ -23,8 +21,9 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <link rel="stylesheet" href="css/configuracion.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -40,8 +39,7 @@
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
-        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full" data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
@@ -62,8 +60,7 @@
                     <!-- ============================================================== -->
                     <!-- toggle and nav items -->
                     <!-- ============================================================== -->
-                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none"
-                        href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
@@ -71,8 +68,7 @@
                 <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
                     <ul class="navbar-nav d-none d-md-block d-lg-none">
                         <li class="nav-item">
-                            <a class="nav-toggler nav-link waves-effect waves-light text-white"
-                                href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                            <a class="nav-toggler nav-link waves-effect waves-light text-white" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
                         </li>
                     </ul>
                     <!-- ============================================================== -->
@@ -83,21 +79,13 @@
                         <!-- ============================================================== -->
                         <!-- Search -->
                         <!-- ============================================================== -->
-                        <li class=" in">
-                            <form role="search" class="app-search d-none d-md-block me-3">
-                                <input type="text" placeholder="Search..." class="form-control mt-0">
-                                <a href="" class="active">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                            </form>
-                        </li>
+                       
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
                         <li>
-                            <a class="profile-pic" href="#">
-                                <img src="plugins/images/users/varun.jpg" alt="user-img" width="36"
-                                    class="img-circle"><span class="text-white font-medium">Steave</span></a>
+                            <a class="profile-pic" href="modificar cuenta.php">
+                                <img src="plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><span class="text-white font-medium">Steave</span></a>
                         </li>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
@@ -120,213 +108,370 @@
                     <ul id="sidebarnav">
                         <!-- User Profile-->
                         <li class="sidebar-item pt-2">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="configuracion.php"
-                                aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="configuracion.php" aria-expanded="false">
                                 <i class="far fa-clock" aria-hidden="true"></i>
                                 <span class="hide-menu">Configuracion</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="usuarios.php"
-                                aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="usuarios.php" aria-expanded="false">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <span class="hide-menu">Usuarios</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="categoria de productos.php"
-                                aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="categoria de productos.php" aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
                                 <span class="hide-menu">Categoria de productos</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Clientes.php"
-                                aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Clientes.php" aria-expanded="false">
                                 <i class="fa fa-font" aria-hidden="true"></i>
                                 <span class="hide-menu">Clientes</span>
                             </a>
                         </li>
-                       
+
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.php"
-                                aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="dashboard.php" aria-expanded="false">
                                 <i class="fa fa-columns" aria-hidden="true"></i>
                                 <span class="hide-menu">Ventas</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="pedido.php"
-                                aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="pedido.php" aria-expanded="false">
                                 <i class="fa fa-columns" aria-hidden="true"></i>
                                 <span class="hide-menu">pedido</span>
                             </a>
                         </li>
+                       
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="modificar cuenta.php"
-                                aria-expanded="false">
-                                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                <span class="hide-menu">Modificar Cuenta</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="404.php"
-                                aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="404.php" aria-expanded="false">
                                 <i class="fa fa-info-circle" aria-hidden="true"></i>
                                 <span class="hide-menu">Cerrar sesion</span>
                             </a>
                         </li>
 
                     </ul>
-                    
+
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
             <!-- End Sidebar scroll-->
         </aside>
-        <div class="caga">
-            <h1 class="Nobre"><b><i>Nombre</i></b></h1>
-            <form action="" class="inpun-nombre" id="formulario" name="formulario">
-                <input class="nombreRol" type="text" id="nombre" >
-
-                <div class="wrapper">
-                    <div class="link_wrapper">
-                        <button type="button" onclick="validarFormulario()" >Guardar</button>
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-                                <path
-                                    d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
-                            </svg>
-                        </div>
+        
+        <div class="page-wrapper">
+            <div class="page-breadcrumb bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Crud Roles</h4>
+                        <form role="search" >
+                                <input type="text" placeholder="Search..." >
+                                <a href="" class="active">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </form>
                     </div>
-
-                </div>
-            </form>
-
-
-        </div>
-        <div class="lista">
-            <h1 class="Rol">Rol</h1>
-            <ol>
-
-
-                <li class="li">
-                    <button type="button" class="boton-modall" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Cliente
-                    </button>
-                    <button type="button" class="eliminarRol" data-bs-toggle="modal" data-bs-target="#eliminar">
-                        <i class="bi bi-trash3"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                <path
-                                    d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
-                            </svg></i>
-                    </button>
-                </li>
-                <li class="li">
-                    <button type="button" class="boton-modall" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Admin
-                    </button>
-                    <button type="button" class="eliminarRol" data-bs-toggle="modal" data-bs-target="#eliminar">
-                        <i class="bi bi-trash3"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                <path
-                                    d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
-                            </svg></i>
-                    </button>
-                </li>
-
-            </ol>
-        </div>
-
-
-        <!-- Modal1 -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="h1Permiso" id="exampleModalLabel">Permisos.</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body ModalTamaño">
-
-                        <p><b>Permisos</b></p>
-                        <select name="" id="">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                        </select>
-
-                        <div class="link_wrapper">
-                            <a class="aa" href="#">Guardar.</a>
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
-                                    <path
-                                        d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="ListaPermisa">
-                            <ol>
-                                <li>Permisos
-                                    <i class="bi bi-trash3"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                            <path
-                                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
-                                        </svg></i>
-                                </li>
-                                <li>Permisos
-                                    <i class="bi bi-trash3"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                            <path
-                                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
-                                        </svg></i>
-                                </li>
-                                <li>Permisos
-                                    <i class="bi bi-trash3"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                            height="20" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                                            <path
-                                                d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z" />
-                                        </svg></i>
-                                </li>
-                            </ol>
-                        </div>
-
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" onclick="validarFormulario2()" class="btn btn-primary" data-bs-dismiss="modal">Editar</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">cancelar</button>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="white-box">
+                            <h3 class="box-title">Roles</h3>
+                            
+                            <div class="table-responsive">
+                                <table class="table text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0">ID</th>
+                                            <th class="border-top-0">Rol</th>
+                                            <th class="border-top-0">Estado</th>
+                                            <th class="border-top-0">Editar</th> 
+                                            <th class="border-top-0">Eliminar</th>               
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Administrador</td>
+                                            <td><div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                              </div>
+                                            </td>
+                                            <td><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaModal2" type="button">Editar</button></td> 
+                                            <td>
+                                                <button class="btn"  data-bs-toggle="modal" data-bs-target="#EliminarProducto">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" style="color: #f62d51;" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                                                    </svg>
+                                                </button> 
+                                                <div class="modal fade" id="EliminarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar Rol</h1>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          ¿Estás seguro de que deseas eliminar este rol?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                          <button type="button" class="btn" style="background-color: #f62d51;  color: #000;">Confirmar</button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div> 
+                                            </td>        
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Cliente</td>
+                                            <td><div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                              </div>
+                                            </td>
+                                            <td><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaModal2" type="button">Editar</button></td> 
+                                            <td>
+                                                <button class="btn"  data-bs-toggle="modal" data-bs-target="#EliminarProducto">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" style="color: #f62d51;" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z" />
+                                                    </svg>
+                                                </button> 
+                                                <div class="modal fade" id="EliminarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <form action="">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar Rol</h1>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          ¿Estás seguro de que deseas eliminar este rol?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                          <button type="button" class="btn" onclick="validarFormulario3()" style="background-color: #f62d51;  color: #000;">Confirmar</button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    </form>
+                                                  </div></td>  
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaModal">Agregar Rol</button>
+                                    <div class="modal fade" id="ventanaModal" tabeindex="-1">
+                                    <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2>Crear rol</h2>
+                                                    <button class="close" data-bs-dismiss="modal"><span>&times;</span></button>
+    
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                    <div class="mb-3">
+                                                        <label for="documento" class="form-label" id="xd">Nombre de rol</label>
+                                                        <input type="name" class="form-control" id="nombre" autofocus>
+                                                    </div>
+
+
+                                                        <div class="mb-3">
+                                                            <label>Dashboard</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                        <div class="mb-3">
+                                                            <label>Roles</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                          <div class="mb-3">
+                                                            <label>Usuarios</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                          <div class="mb-3">
+                                                            <label>Productos</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                          <div class="mb-3">
+                                                            <label>Categoria de productos</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                          <div class="mb-3">
+                                                            <label>Clientes</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>            
+                                                          <div class="mb-3">
+                                                            <label>Ventas</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>     
+                                                          <div class="mb-3">
+                                                            <label>Entradas</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>  
+                                                          <div class="mb-3">
+                                                            <label>Estado</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                                    <button type="button" onclick="validarFormulario()"class="btn btn-success">Crear</button>
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
 
 
 
+                                    <div class="modal fade" id="ventanaModal2" tabeindex="-1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h2>Editar Rol y Permisos</h2>
+                                                    <button class="close" data-bs-dismiss="modal"><span>&times;</span></button>
+    
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label>Dashboard</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                        <div class="mb-3">
+                                                            <label>Roles</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                          <div class="mb-3">
+                                                            <label>Usuarios</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                          <div class="mb-3">
+                                                            <label>Productos</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                          <div class="mb-3">
+                                                            <label>Categoria de productos</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                          <div class="mb-3">
+                                                            <label>Clientes</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>            
+                                                          <div class="mb-3">
+                                                            <label>Ventas</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>     
+                                                          <div class="mb-3">
+                                                            <label>Entradas</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>  
+                                                          <div class="mb-3">
+                                                            <label>Estado</label>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                                                <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Activo</label>
+                                                            </div>
+                                                          </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-success" onclick="validarFormulario2()">Guardar</button>
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
 
 
-        <!-- Modal2 -->
-        <div class="modal fade" id="eliminar" tabindex="-1" aria-labelledby="eliminar" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">ELiminar Rol: 1</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body  ">
-                       <h1 class="fs-3"><b>Nombre Rol:</b></h1> <p> <b>El pepe</b></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" onclick="validarFormulario3()" data-bs-dismiss="modal">Eliminar</button>
-                        <button type="button" class="btn btn-primary"  data-bs-dismiss="modal">cancelar</button>
+
+                        </div>
                     </div>
                 </div>
-            </div>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+
+
+       
+                <!-- ============================================================== -->
+                <!-- PRODUCTS YEARLY SALES -->
+                <!-- ============================================================== -->
+                
+            <!-- footer -->
+            <!-- ============================================================== -->
+          
         </div>
+        
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
     </div>
-
-
+    <footer class="footer text-center"> 2022 ©
+    </footer>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
@@ -337,13 +482,20 @@
     <!-- Bootstrap tether Core JavaScript -->
     <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app-style-switcher.js"></script>
+    <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
     <!--Wave Effects -->
     <script src="js/waves.js"></script>
     <!--Menu sidebar -->
     <script src="js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="plugins/bower_components/chartist/dist/chartist.min.js"></script>
+    <script src="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="js/pages/dashboards/dashboard1.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
 
 
@@ -432,8 +584,9 @@ function validarFormulario() {
 }
 
 
-    </script>
 
+
+    </script>
 </body>
 
 </html>
